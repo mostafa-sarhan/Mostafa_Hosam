@@ -14,14 +14,57 @@
   }
 }
 
+/* Default light mode styles */
 body {
-
   font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
+  background: linear-gradient(90deg, rgba(251, 133, 0, 1) 4%, rgba(250, 250, 180, 1) 97%);
+  color: black;
 }
+
+.back-white{
+  background-color: white;
+}
+
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.specific_color {
+  color: #fb8500;
+}
+.clr{
+  background: linear-gradient(90deg, rgba(252,200,121,1) 4%, rgba(251,133,0,1) 100%);
+}
+.clr_specific{
+  background: linear-gradient(90deg, rgba(251,133,0,1) 6%, rgba(251,155,40,1) 28%, rgba(251,156,42,1) 50%, rgba(251,171,68,1) 79%, rgba(252,200,121,1) 100%);
+}
+.back-gray{
+  background-color: #9CA3AF;
+}
+
+/* Using Dark MOde */
+
+
+/* Dark mode styles */
+.dark body {
+  background: linear-gradient(90deg, rgba(29,29,29,1) 100%, rgba(135,126,112,1) 100%);
+  color: white;
+}
+.dark .specific_color{
+  color: #fff;
+}
+.dark .back-white{
+  background-color: #0a0a0a;
+}
+.dark .clr{
+  background: linear-gradient(90deg, rgba(29,29,29,1) 100%, rgba(135,126,112,1) 100%);
+}
+.dark .back-gray{
+  background-color: #171717;
+}
+.dark .clr_specific{
+  background: #413f3f;
 }
